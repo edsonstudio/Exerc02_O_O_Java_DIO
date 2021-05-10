@@ -45,4 +45,13 @@ public class Carro {
     public void setAno(Integer ano) {
         this.ano = ano;
     }
+
+    @Override
+    public String toString() {
+        return "Carro: \n" +
+                "marca: " + marca + '\n' +
+                "modelo: " + modelo + '\n' +
+                "variante: " + (variante == null ? "Não possui variante" : variante) + '\n' +
+                "ano: " + ano;
+    }
 }
